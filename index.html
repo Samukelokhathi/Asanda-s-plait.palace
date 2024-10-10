@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    /* Custom styling to match exact spacing and alignment */
+    .price-list-section {
+        max-width: 1100px;
+    }
+</style>
+
+<body style="background-color: black;">
+    <header class="bg-white text-black p-6 fixed w-full top-0 z-10">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+          <!-- Left navigation links -->
+          <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <a href="#home" class="hover:underline" onclick="showSection('home')">Home</a>
+            <a href="#priceList" class="hover:underline" onclick="showSection('priceList')">Price List</a>
+            <!-- <a href="#" class="hover:underline" onclick="showSection('beauty')">Beauty</a> -->
+          </nav>
+    
+          <!-- Title in the center, responsive text size -->
+          <h1 class="text-lg md:text-xl font-bold text-center mt-4 md:mt-0">Asanda's Plait Palace</h1>
+    
+          <!-- Right navigation links -->
+          <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
+            <!-- <a href="#" class="hover:underline" onclick="showSection('shop')">Shop</a> -->
+            <a href="#contact" class="hover:underline" onclick="showSection('contact')">Contact Us</a>
+            <a href="#gallery" class="hover:underline" onclick="showSection('gallery')">Gallery</a>
+          </nav>
+        </div>
+    </header>
+    
+
+
+  <main class="pt-16">
+    <!-- Home Section (default section, no hidden) -->
+    <section id="home">
+      <div class="relative">
+        <img src="images/asanda shezi 122.jpg" alt="Cover" class="w-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
+
+      <section class="bg-black text-white py-12 px-6">
+        <div class="container mx-auto">
+          <!-- About Us Header -->
+          <h2 class="text-4xl font-bold text-center mb-12">About Us</h2>
+          <div class="grid md:grid-cols-2 gap-12 mb-12">
+            <!-- Image placeholder (insert your image here) -->
+            <div>
+                <img src="images/asanda's plait palace.jpeg" alt="Suidooster Team" class="w-full rounded-lg shadow-lg">
+            </div>
+    
+            <!-- Suidooster Text -->
+            <div class="flex flex-col justify-center">
+            <h3 class="text-2xl font-semibold mb-4">Suidooster</h3>
+            <p class="text-lg">
+                We are the hair stylists for <strong>The Suidooster Series</strong>. We have been with them since their very first episode in 2015 and have enjoyed every moment along the way. We offer a variety of hair treatments to match every personality and look, and we are always there to help them look their best.
+            </p>
+            </div>
+        </div>
+    
+        <!-- Second row: Platinum Hair and Beauty Section -->
+        <div class="grid md:grid-cols-2 gap-12 mb-12">
+            <!-- Platinum Hair and Beauty Text -->
+            <div class="flex flex-col justify-center">
+            <h3 class="text-2xl font-semibold mb-4">Platinum Hair and Beauty</h3>
+            <p class="text-lg mb-4">
+                Platinum Hair and Beauty Salon is a world-renowned salon specializing in a vast range of hair and beauty treatments. Jill Addison and her professional team of talented hairstylists and beauticians only use the highest quality products available on the market today.
+            </p>
+            <p class="text-lg mb-4">
+                For in-house treatments and retail, only salon professional products such as Schwarzkopf, Kerastase, Guinot, Dermalogica, and Environ are used at Platinum Hair and Beauty.
+            </p>
+            <p class="text-lg mb-4">
+                The salon has been successful for more than 23 years under Jill Addison's ownership, and is currently sponsoring a top national television program. With qualified staff members providing services for matriculants, weddings, makeovers, and TV actors, Platinum Hair and Beauty is dedicated to treating every client as royalty.
+            </p>
+            <p class="text-lg">
+                Come experience what sets Platinum Hair and Beauty apart from all the rest – we know you won't be disappointed!
+            </p>
+            </div>
+
+            <div>
+                <img src="https://th.bing.com/th/id/R.e5370ce35cb8dbe4311ea01da2ae3228?rik=iAMVXHmhdWHfzA&pid=ImgRaw&r=0">
+            </div>
+
+            <div>
+                <img src="images/asanda shezi.jpg" alt="Suidooster Team" class="w-full rounded-lg shadow-lg">
+            </div>
+            
+            <div class="flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold mb-4">Suidooster</h3>
+                <p class="text-lg">
+                We are the hair stylists for <strong>The Suidooster Series</strong>. We have been with them since their very first episode in 2015 and have enjoyed every moment along the way. We offer a variety of hair treatments to match every personality and look, and we are always there to help them look their best.
+                </p>
+            </div>
+        </div>
+        </div>
+      </section>
+      <hr>
+
+      <section id="socials" class=" text-white flex items-center justify-center h-52" style="background-color:black;">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold mb-10">Follow Us</h1>
+        
+            <div class="flex justify-center space-x-8">
+            <!-- Facebook -->
+            <!-- <a href="https://www.facebook.com/your-link" target="_blank" class="w-16 h-16 flex items-center justify-center rounded-full bg-white hover:bg-gray-200 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="w-8 h-8">
+            </a> -->
+        
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/asandas.plait.palace_/" target="_blank" class="w-16 h-16 flex items-center justify-center rounded-full bg-white hover:bg-gray-200 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-8 h-8">
+            </a>
+        
+            <!-- TikTok -->
+            <a href="https://www.instagram.com/its_sanda04/" target="_blank" class="w-16 h-16 flex items-center justify-center rounded-full bg-white hover:bg-gray-200 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-8 h-8">
+            </a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="h-52 bg-black flex justify-center text-white">
+            <div class="text-2xl mt-12">Asanda's Plait Palace
+                <div class="mt-10 text-center ">0685019743</div>    
+            </div>
+        </div>
+    </section>
+    
+    </section>
+
+
+                    <!-- PRICE LIST SECTION  -->
+
+
+    <section id="priceList" class="hidden">
+      <div>
+        <div class="h-[500px]">
+            <img src="images/gallary/asanda client 8.jpg" alt="Cover" class="w-full h-82 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>   
+        </div>
+
+        <section class="bg-black text-white">
+            <div class="container mx-auto py-16 px-4 lg:px-0 price-list-section">
+                <h2 class="text-4xl font-extrabold text-left mb-6">Menu | Price List</h2>
+                <hr class="border-gray-600 mb-8">
+        
+                <!-- Styling Section -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-2">Styling</h3>
+                    <p class="text-sm text-gray-400 mb-6">Let your hair do all the talking.</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Styling Item Row -->
+                        <div class="flex justify-between">
+                            <span>Styling</span>
+                            <span>From R295</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Flat Iron / Curls | Medium</span>
+                            <span>From R460</span>
+                        </div>
+                        <!-- More styling rows -->
+                        <div class="flex justify-between">
+                            <span>Styling Medium</span>
+                            <span>From R320</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Flat Iron / Curls | Long</span>
+                            <span>From R500</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Styling Long</span>
+                            <span>From R380</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Up Style</span>
+                            <span>From R560</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Cut Only</span>
+                            <span>From R380</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Bridal Trial</span>
+                            <span>From R500</span>
+                        </div>
+                        <!-- Add more items here -->
+                    </div>
+                </div>
+                <hr class="border-gray-600 mb-8">
+        
+                <!-- Styling Section -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-2">Treatment</h3>
+                    <p class="text-sm text-gray-400 mb-6">Let your hair do all the talking.</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Styling Item Row -->
+                        <div class="flex justify-between">
+                            <span>Styling</span>
+                            <span>From R295</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Flat Iron / Curls | Medium</span>
+                            <span>From R460</span>
+                        </div>
+                        <!-- More styling rows -->
+                        <div class="flex justify-between">
+                            <span>Styling Medium</span>
+                            <span>From R320</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Flat Iron / Curls | Long</span>
+                            <span>From R500</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Styling Long</span>
+                            <span>From R380</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Up Style</span>
+                            <span>From R560</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Cut Only</span>
+                            <span>From R380</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Bridal Trial</span>
+                            <span>From R500</span>
+                        </div>
+                        <!-- Add more items here -->
+                    </div>
+                </div>
+                <hr class="border-gray-600 mb-8">
+        
+                <!-- Styling Section -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-2">Color</h3>
+                    <p class="text-sm text-gray-400 mb-6">Let your hair do all the talking.</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Styling Item Row -->
+                        <div class="flex justify-between">
+                            <span>Styling</span>
+                            <span>From R295</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Flat Iron / Curls | Medium</span>
+                            <span>From R460</span>
+                        </div>
+                        <!-- More styling rows -->
+                        <div class="flex justify-between">
+                            <span>Styling Medium</span>
+                            <span>From R320</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Flat Iron / Curls | Long</span>
+                            <span>From R500</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Styling Long</span>
+                            <span>From R380</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Up Style</span>
+                            <span>From R560</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Cut Only</span>
+                            <span>From R380</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Bridal Trial</span>
+                            <span>From R500</span>
+                        </div>
+                        <!-- Add more items here -->
+                    </div>
+                </div>
+            </div>
+        
+            <footer class="text-center py-8">
+                <p class="text-gray-400">*All prices are length dependent. Prices are subject to change.</p>
+            </footer>
+
+            <section>
+                <hr>
+                <div class="h-52 bg-black flex justify-center text-white">
+                    <div class="text-2xl mt-12">Asanda's Plait Palace
+                        <div class="mt-10 text-center ">0685019743</div>    
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        
+      </div>
+      
+      
+    </section>
+
+    <section id="beauty" class="hidden">
+      <h1 class="text-center text-2xl">This is the Beauty page.</h1>
+    </section>
+
+    <section id="shop" class="hidden">
+      <h1 class="text-center text-2xl">This is the Shop page.</h1>
+    </section>
+
+                    <!-- CONTACTS SECTION -->
+
+    <section id="contact" class="hidden container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-32">
+            <div>
+                <h1 class="text-5xl font-extrabold text-white mb-6">Contact Us</h1>
+                <hr>
+
+
+                <!-- Location -->
+                <h3 class="text-5xl font-extrabold text-white mt-16 mb-4">Location</h3>
+                <p class="text-lg text-white mb-2">Ashdown Clinic, 34 Umvoti Road, Pietermaritzburg, KwaZulu-Natal, South Africa</p>
+                <p class="text-lg text-white mb-6">033 394 1234</p>
+
+                <!-- Hours -->
+                <h3 class="text-5xl font-extrabold text-white mb-4">Hours</h3>
+                <p class="text-lg text-white mb-1">Monday - Saturday: 8 am - 5 pm</p>
+                <p class="text-lg text-white mb-6">Sunday: Closed</p>
+            </div>
+            <div class="lg:w-1/2 lg:ml-8 pt-16">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.9820490633254!2d30.379567214443163!3d-29.647502449819047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1efec7b054a64abf%3A0xa57e1d9493b2c3fa!2sAshdown%20Clinic%2C%20Pietermaritzburg!5e0!3m2!1sen!2sza!4v1602101478319!5m2!1sen!2sza"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
+        <section>
+            <hr style="margin-top: 50px;"> 
+            <div class=" mt-10 h-52 w-full bg-black flex justify-center text-white">
+                <div class="text-2xl mt-12">Asanda's Plait Palace
+                    <div class="mt-10 text-center ">0685019743</div>    
+                </div>
+            </div>
+        </section>
+    </section>
+
+                        <!-- GALLARY SECTION -->
+
+    <section id="gallery" class="hidden">
+        <style>
+            .carousel-inner {
+                display: flex;
+                position: relative;
+                width: 50%;
+                height: 500px; /* Fixed height for gallery */
+                background-color: black; /* Background color */
+            }
+    
+            .carousel-item {
+                position: absolute;
+                transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                width: 60%; /* Width of the visible image */
+                height: 100%;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%); /* Center the current image */
+                opacity: 0.2; /* Default opacity for non-active images */
+            }
+    
+            .carousel-item.active {
+                opacity: 1; /* Active image has full opacity */
+            }
+    
+            .carousel-item.prev {
+                opacity: 0; /* Fully disappear */
+                transform: translateX(-200%); /* Position previous image to the left and off-screen */
+            }
+    
+            .carousel-item.next {
+                opacity: 0.5; /* Partially visible for the next image */
+                transform: translateX(100%); /* Position next image to the right */
+            }
+    
+            .indicators {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 0.5rem;
+            }
+    
+            .indicators button {
+                background: white;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: none;
+            }
+    
+            .indicators button.active {
+                background: black;
+            }
+    
+            /* Thumbnails */
+            .thumbnail {
+                width: 100px;
+                height: 50px;
+                object-fit: cover;
+            }
+        </style>
+      <div class="container mx-auto py-12">
+        <h1 class="text-4xl font-bold text-center mb-4 text-white" >Beauty Beyond the Surface: A Gallery of Our Salon's Creativity and Artistry</h1>
+        <hr class="border-t border-gray-500 mb-8">
+
+
+        <div class="relative"></div>
+            <div id="carousel" class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/gallary/asanda client 1.jpg" alt="Gallery Image 1" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-item prev">
+                    <img src="images/gallary/asanda client 2.jpg" alt="Gallery Image 2" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-item next">
+                    <img src="images/gallary/asanda client 3.jpg" alt="Gallery Image 3" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-item next">
+                    <img src="images/gallary/asanda client 4.jpg" alt="Gallery Image 4" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-item next">
+                    <img src="images/gallary/asanda client 5.jpg" alt="Gallery Image 5" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-item next">
+                    <img src="images/gallary/asanda client 6.jpg" alt="Gallery Image 6" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-item next">
+                    <img src="images/gallary/asanda client 7.jpg" alt="Gallery Image 7" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Indicators -->
+            <div class="indicators">
+                <button class="active" onclick="goToSlide(0)"></button>
+                <button onclick="goToSlide(1)"></button>
+                <button onclick="goToSlide(2)"></button>
+                <button onclick="goToSlide(3)"></button>
+                <button onclick="goToSlide(4)"></button>
+                <button onclick="goToSlide(5)"></button>
+                <button onclick="goToSlide(6)"></button>
+                <button onclick="goToSlide(7)"></button>
+            </div>
+        </div>
+
+        <!-- Thumbnails for manual browsing -->
+        <div class="flex justify-center mt-8 space-x-4">
+            <img src="images/gallary/asanda client 1.jpg" alt="Thumb 1" class="thumbnail cursor-pointer" onclick="goToSlide(0)">
+            <img src="images/gallary/asanda client 2.jpg" alt="Thumb 2" class="thumbnail cursor-pointer" onclick="goToSlide(1)">
+            <img src="images/gallary/asanda client 3.jpg" alt="Thumb 3" class="thumbnail cursor-pointer" onclick="goToSlide(2)">
+            <img src="images/gallary/asanda client 4.jpg" alt="Thumb 1" class="thumbnail cursor-pointer" onclick="goToSlide(0)">
+            <img src="images/gallary/asanda client 5.jpg" alt="Thumb 2" class="thumbnail cursor-pointer" onclick="goToSlide(1)">
+            <img src="images/gallary/asanda client 6.jpg" alt="Thumb 3" class="thumbnail cursor-pointer" onclick="goToSlide(2)">
+            <img src="images/gallary/asanda client 7.jpg" alt="Thumb 3" class="thumbnail cursor-pointer" onclick="goToSlide(2)">
+        </div>
+
+        <section>
+            <hr style="margin-top: 50px;"> 
+            <div class=" mt-10 h-52 w-full bg-black flex justify-center text-white">
+                <div class="text-2xl mt-12">Asanda's Plait Palace
+                    <div class="mt-10 text-center ">0685019743</div>    
+                </div>
+            </div>
+        </section>
+
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <script src="main.js">
+    
+  </script>
+</body>
+</html>
